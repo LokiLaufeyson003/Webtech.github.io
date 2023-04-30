@@ -12,9 +12,9 @@ const firebaseConfig = {
 
 // reference your database
 
-var const contactFormDB = firebase.database().ref("Webtech");
+var const contactFormDB = firebase.database().ref("webtech");
 
-document.getElementbyId("Webtech").addEventListener('submit', submitForm);
+document.getElementbyId("webtech").addEventListener('submit', submitForm);
 
 function submitForm(e) {
     e.preventdefault();
@@ -35,15 +35,15 @@ function submitForm(e) {
   }, 3000);
 
   //   reset the form
-  document.getElementById("contactForm").reset();
+  document.getElementById("webtech").reset();
 
 }
 
 cons saveMessages = (name , emailid , msgContent) => {
 
-var newContactForm = contactFormDB.push();
+var newWebtech = webtechDB.push();
 
-newContactForm.set({
+newwebtech.set({
 name : name,
 emailid : emailid,
 msgContent : msgContent
